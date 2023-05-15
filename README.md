@@ -2,6 +2,37 @@
 
 ### Aplikacja do zamawiania pizzy
 
+## Ekrany:
+ - Ekran glowny
+  	- Menu
+ 	- Karuzela
+ 		- zdjęcia pizzy
+ 		- po kliknięciu jakiś opis, składniki, cena
+ 	- Przycisk CTA: "Zamów pizze"
+ - Zamawianie pizzy
+ 	- Menu
+ 	- Rysowana pizza
+ 	- Wybór składników
+ 	- Przycisk "+" (zapisujemy tę pizzę, tworzymy kolejną pustą pizzę i możliwość wyboru składników)
+ 	- Przycisk "Dalej"
+ - Zamawianie dodatków
+ 	- Wybór sosów
+ 	- Wybór napojów
+ 	- Przycisk "Dalej"
+ - Potwierdzenie zamówienia
+ 	- Treść zamówienia
+ 	- Przycisk "Wypiecz" (na przytrzymanie a nie tap)
+ - Historyczne zamówienia
+ 	- Lista zamówień
+ 		- Id zamówienia
+ 		- Zamówione pozycje
+
+## Komponenty:
+ - Menu
+ 	- ekran glowny
+ 	- zamawianie pizzy
+ 	- historyczne zamowienia
+
 ## Flow:
 
  1. Klikasz zamow
@@ -13,5 +44,4 @@
 
 ## Dodatkowe pomysly jakbysmy za duzo czasu mieli albo chcieli wiecej punktow :)
 
- - mozliwosc przegladania historycznych zamowien
  - jakis moduł fake płatności
