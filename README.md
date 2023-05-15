@@ -19,8 +19,11 @@
  	- Wybór sosów
  	- Wybór napojów
  	- Przycisk "Dalej"
+ - Formularz adresu
+ 	- Inputy na adres :) 
  - Potwierdzenie zamówienia
  	- Treść zamówienia
+ 	- Adres
  	- Przycisk "Wypiecz" (na przytrzymanie a nie tap)
  - Historyczne zamówienia
  	- Lista zamówień
