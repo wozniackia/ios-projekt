@@ -25,16 +25,11 @@
  	- Treść zamówienia
  	- Adres
  	- Przycisk "Wypiecz" (na przytrzymanie a nie tap)
- - Historyczne zamówienia
- 	- Lista zamówień
- 		- Id zamówienia
- 		- Zamówione pozycje
 
 ## Komponenty:
  - Menu
  	- ekran glowny
  	- zamawianie pizzy
- 	- historyczne zamowienia
 
 ## Flow:
 

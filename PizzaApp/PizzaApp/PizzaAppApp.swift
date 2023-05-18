@@ -1,0 +1,31 @@
+//
+//  PizzaAppApp.swift
+//  PizzaApp
+//
+//  Created by Antek Woźniacki on 17/05/2023.
+//
+
+import SwiftUI
+
+@main
+struct PizzaAppApp: App {
+    let persistenceController = PersistenceController.shared
+    
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+        }
+    }
+}
+
+extension Color {
+    struct UI {
+        static let orangePrimary = Color("OrangePrimary")
+        static let orangeSecondary = Color("OrangeSecondary")
+        static let gray1 = Color("Gray01")
+        static let gray2 = Color("Gray02")
+        static let gray3 = Color("Gray03")
+        static let gray4 = Color("Gray04")
+    }
+}
