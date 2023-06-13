@@ -6,15 +6,14 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct PizzaAppApp: App {
-    let persistenceController = PersistenceController.shared
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
@@ -27,5 +26,7 @@ extension Color {
         static let gray2 = Color("Gray02")
         static let gray3 = Color("Gray03")
         static let gray4 = Color("Gray04")
+        static let pizza1 = Color("Pizza01")
+        static let pizza2 = Color("Pizza02")
     }
 }

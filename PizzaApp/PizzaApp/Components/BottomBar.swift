@@ -16,7 +16,7 @@ struct BottomBar: View {
                 .frame(width: .infinity, height: 83)
                 .foregroundColor(.UI.gray1)
             HStack(spacing: 40) {
-                ForEach((0..<5), id: \.self) { index in
+                ForEach((0..<4), id: \.self) { index in
                     if(index == self.index) {
                         Circle()
                             .frame(width: 32, height: 32)
@@ -29,7 +29,7 @@ struct BottomBar: View {
                 }
             }
         }
-        .frame(width: .infinity, height: .infinity)
+        .padding(0)
     }
 }
 

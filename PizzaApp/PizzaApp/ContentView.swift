@@ -9,10 +9,22 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    
+    @State var viewIndex = 0;
 
     var body: some View {
-//        MainMenuView()
-        PizzaView()
+        switch viewIndex {
+        case 0:
+            MainMenuView(viewIndex: $viewIndex)
+        case 1:
+            PizzaView(viewIndex: $viewIndex)
+        case 2:
+            DeliveryView(viewIndex: $viewIndex)
+        case 3:
+            SummaryView(viewIndex: $viewIndex)
+        default:
+            MainMenuView(viewIndex: $viewIndex)
+        }
     }
 }
 
