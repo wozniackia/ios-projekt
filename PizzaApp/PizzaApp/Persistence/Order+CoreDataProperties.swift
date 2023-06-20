@@ -18,14 +18,15 @@ extension Order {
 
     @NSManaged public var orderDate: Date?
     @NSManaged public var deliveryDate: Date?
+    @NSManaged public var size: NSNumber?
     @NSManaged public var id: UUID?
-    @NSManaged public var toDog: NSSet?
+    @NSManaged public var toOrder: NSSet?
 
-     public var dogArray: [Order] {
-     let set = toDog as? Set<Order> ?? []
+     public var orderArray: [Order] {
+     let set = toOrder as? Set<Order> ?? []
 
          return set.sorted{
-             $0.orderDate! < $1.orderDate!
+             $0.orderDate! > $1.orderDate!
              
          }
      }

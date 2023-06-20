@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1050502A3996AA0042F8D5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F10504F2A3996AA0042F8D5 /* Persistence.swift */; };
+		3F1050532A3998830042F8D5 /* Order+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1050512A3998830042F8D5 /* Order+CoreDataClass.swift */; };
+		3F1050542A3998830042F8D5 /* Order+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1050522A3998830042F8D5 /* Order+CoreDataProperties.swift */; };
 		6D5DFE492A390B35006CBA6C /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5DFE482A390B35006CBA6C /* SummaryView.swift */; };
 		6D5DFE4B2A3910C1006CBA6C /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5DFE4A2A3910C1006CBA6C /* CircularProgressView.swift */; };
-		6D5DFE5F2A3921D4006CBA6C /* Order+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5DFE5D2A3921D4006CBA6C /* Order+CoreDataClass.swift */; };
-		6D5DFE602A3921D4006CBA6C /* Order+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5DFE5E2A3921D4006CBA6C /* Order+CoreDataProperties.swift */; };
 		6D6F3F082A152D160043B4C5 /* PizzaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6F3F072A152D160043B4C5 /* PizzaAppApp.swift */; };
 		6D6F3F0A2A152D160043B4C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6F3F092A152D160043B4C5 /* ContentView.swift */; };
 		6D6F3F0C2A152D160043B4C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D6F3F0B2A152D160043B4C5 /* Assets.xcassets */; };
@@ -24,6 +25,9 @@
 		6D6F3F3B2A1545D10043B4C5 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6F3F3A2A1545D10043B4C5 /* BottomBar.swift */; };
 		6D6F3F3F2A154BF20043B4C5 /* PizzaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6F3F3E2A154BF20043B4C5 /* PizzaView.swift */; };
 		6D6F3F4A2A1555500043B4C5 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6F3F492A1555500043B4C5 /* MainMenuView.swift */; };
+		6D8665E22A410C1B0064762A /* CheckboxRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8665E12A410C1B0064762A /* CheckboxRow.swift */; };
+		6D8665E92A410E270064762A /* Topping+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8665E72A410E270064762A /* Topping+CoreDataClass.swift */; };
+		6D8665EA2A410E270064762A /* Topping+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8665E82A410E270064762A /* Topping+CoreDataProperties.swift */; };
 		AD76A2D62A387144007F70DA /* DeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD76A2D52A387144007F70DA /* DeliveryView.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,10 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F10504F2A3996AA0042F8D5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		3F1050512A3998830042F8D5 /* Order+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3F1050522A3998830042F8D5 /* Order+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6D5DFE482A390B35006CBA6C /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		6D5DFE4A2A3910C1006CBA6C /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
-		6D5DFE5D2A3921D4006CBA6C /* Order+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6D5DFE5E2A3921D4006CBA6C /* Order+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6D6F3F042A152D160043B4C5 /* PizzaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D6F3F072A152D160043B4C5 /* PizzaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaAppApp.swift; sourceTree = "<group>"; };
 		6D6F3F092A152D160043B4C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +70,9 @@
 		6D6F3F3A2A1545D10043B4C5 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		6D6F3F3E2A154BF20043B4C5 /* PizzaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaView.swift; sourceTree = "<group>"; };
 		6D6F3F492A1555500043B4C5 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		6D8665E12A410C1B0064762A /* CheckboxRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxRow.swift; sourceTree = "<group>"; };
+		6D8665E72A410E270064762A /* Topping+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Topping+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6D8665E82A410E270064762A /* Topping+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Topping+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AD76A2D52A387144007F70DA /* DeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +104,11 @@
 		6D5DFE542A391766006CBA6C /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				3F10504F2A3996AA0042F8D5 /* Persistence.swift */,
+				6D8665E72A410E270064762A /* Topping+CoreDataClass.swift */,
+				6D8665E82A410E270064762A /* Topping+CoreDataProperties.swift */,
+				3F1050512A3998830042F8D5 /* Order+CoreDataClass.swift */,
+				3F1050522A3998830042F8D5 /* Order+CoreDataProperties.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -103,8 +116,6 @@
 		6D6F3EFB2A152D150043B4C5 = {
 			isa = PBXGroup;
 			children = (
-				6D5DFE5D2A3921D4006CBA6C /* Order+CoreDataClass.swift */,
-				6D5DFE5E2A3921D4006CBA6C /* Order+CoreDataProperties.swift */,
 				6D6F3F062A152D160043B4C5 /* PizzaApp */,
 				6D6F3F1C2A152D170043B4C5 /* PizzaAppTests */,
 				6D6F3F262A152D170043B4C5 /* PizzaAppUITests */,
@@ -129,7 +140,6 @@
 				6D6F3F3D2A154BD80043B4C5 /* Views */,
 				6D6F3F3C2A154BC00043B4C5 /* Components */,
 				6D6F3F072A152D160043B4C5 /* PizzaAppApp.swift */,
-				6D6F3F092A152D160043B4C5 /* ContentView.swift */,
 				6D6F3F0B2A152D160043B4C5 /* Assets.xcassets */,
 				6D6F3F122A152D160043B4C5 /* PizzaApp.xcdatamodeld */,
 				6D6F3F0D2A152D160043B4C5 /* Preview Content */,
@@ -169,6 +179,7 @@
 				6D6F3F382A153D3B0043B4C5 /* Carousel.swift */,
 				6D6F3F3A2A1545D10043B4C5 /* BottomBar.swift */,
 				6D5DFE4A2A3910C1006CBA6C /* CircularProgressView.swift */,
+				6D8665E12A410C1B0064762A /* CheckboxRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -176,6 +187,7 @@
 		6D6F3F3D2A154BD80043B4C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6D6F3F092A152D160043B4C5 /* ContentView.swift */,
 				6D6F3F3E2A154BF20043B4C5 /* PizzaView.swift */,
 				6D6F3F492A1555500043B4C5 /* MainMenuView.swift */,
 				AD76A2D52A387144007F70DA /* DeliveryView.swift */,
@@ -318,15 +330,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D8665E22A410C1B0064762A /* CheckboxRow.swift in Sources */,
+				3F1050542A3998830042F8D5 /* Order+CoreDataProperties.swift in Sources */,
 				6D6F3F4A2A1555500043B4C5 /* MainMenuView.swift in Sources */,
 				6D6F3F142A152D160043B4C5 /* PizzaApp.xcdatamodeld in Sources */,
 				6D6F3F372A1536D00043B4C5 /* PageHeader.swift in Sources */,
+				3F1050502A3996AA0042F8D5 /* Persistence.swift in Sources */,
+				6D8665EA2A410E270064762A /* Topping+CoreDataProperties.swift in Sources */,
 				6D5DFE492A390B35006CBA6C /* SummaryView.swift in Sources */,
-				6D5DFE5F2A3921D4006CBA6C /* Order+CoreDataClass.swift in Sources */,
 				6D6F3F3F2A154BF20043B4C5 /* PizzaView.swift in Sources */,
-				6D5DFE602A3921D4006CBA6C /* Order+CoreDataProperties.swift in Sources */,
 				AD76A2D62A387144007F70DA /* DeliveryView.swift in Sources */,
+				3F1050532A3998830042F8D5 /* Order+CoreDataClass.swift in Sources */,
 				6D6F3F392A153D3B0043B4C5 /* Carousel.swift in Sources */,
+				6D8665E92A410E270064762A /* Topping+CoreDataClass.swift in Sources */,
 				6D6F3F3B2A1545D10043B4C5 /* BottomBar.swift in Sources */,
 				6D6F3F0A2A152D160043B4C5 /* ContentView.swift in Sources */,
 				6D5DFE4B2A3910C1006CBA6C /* CircularProgressView.swift in Sources */,
@@ -496,6 +512,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,6 +541,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

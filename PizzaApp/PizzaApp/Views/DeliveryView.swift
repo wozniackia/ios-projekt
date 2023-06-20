@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct DeliveryView: View {
-    @State var Ulica :String = ""
-    @State var Kod :String = ""
-    @State var Miasto :String = ""
-    @State var Telefon :String = ""
+    @Environment(\.managedObjectContext) private var viewContext
+    @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Order.orderDate, ascending: false)], animation: .default)
+    
+    private var orders: FetchedResults<Order>
+    
     @Binding var viewIndex: Int
+    
+    @State private var street = ""
+    @State private var postalCode = ""
+    @State private var city = ""
+    @State private var phoneNumber = ""
+    
+    var isDeliveryDataValid: Bool {
+        return !street.isEmpty && !postalCode.isEmpty && !city.isEmpty && !phoneNumber.isEmpty && phoneNumber.count == 9
+    }
     
     var body: some View {
             VStack {
@@ -21,22 +31,22 @@ struct DeliveryView: View {
                 
                 Spacer(minLength: 75)
                 
-                TextField("Ulica i numer",text: $Ulica)
+                TextField("Ulica i numer",text: $street)
                     .frame(width: 330,height: 50)
                     .border(Color.UI.gray2)
                     .cornerRadius(8)
                     .background(Color.UI.gray1)
-                TextField("Kod pocztowy",text: $Kod)
+                TextField("Kod pocztowy",text: $postalCode)
                     .frame(width: 330,height: 50)
                     .border(Color.UI.gray2)
                     .cornerRadius(8)
                     .background(Color.UI.gray1)
-                TextField("Miasto",text: $Miasto)
+                TextField("Miasto",text: $city)
                     .frame(width: 330,height: 50)
                     .border(Color.UI.gray2)
                     .cornerRadius(8)
                     .background(Color.UI.gray1);
-                TextField("Numer telefonu",text: $Telefon)
+                TextField("Numer telefonu",text: $phoneNumber)
                     .frame(width: 330,height: 50)
                     .border(Color.UI.gray2)
                     .cornerRadius(8)
@@ -45,11 +55,19 @@ struct DeliveryView: View {
                 Spacer(minLength: 50)
                 
                 Button("Zamów pizzę") {
+                    orders[0].deliveryDate = Date().addingTimeInterval(60)
+                    do {
+                        try viewContext.save()
+                    } catch {
+                        let nsError = error as NSError
+                        fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+                    }
                     viewIndex += 1
                 }
+                .disabled(!isDeliveryDataValid)
                 .padding()
-                .foregroundColor(Color.white)
-                .background(Color.UI.orangePrimary)
+                .foregroundColor(isDeliveryDataValid ? Color.white : .UI.gray4)
+                .background(isDeliveryDataValid ? Color.UI.orangePrimary : .UI.gray1)
                 .clipShape(Capsule())
                 .position(x: 195, y: 25)
                 

@@ -10,19 +10,19 @@ import SwiftUI
 struct SummaryView: View {
     
     @Environment(\.managedObjectContext) private var viewContext
-    @FetchRequest(
-       sortDescriptors: [NSSortDescriptor(keyPath: \Order.id,
-    ascending: true)],
-    animation: .default)
-
-     private var order: FetchedResults<Order>
+    @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Order.orderDate, ascending: false)], animation: .default)
+    
+    private var orders: FetchedResults<Order>
     
     @Binding var viewIndex: Int
-    @State var progress = 0.7
+    @State var progress = 0.0
+    
+    let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
+
     
     var body: some View {
         VStack {
-            PageHeader(headerText: "Podsumowanie", showNextButton: false, textColor: .black, subTextColor: .UI.orangePrimary, viewIndex: $viewIndex)
+            PageHeader(headerText: "Podsumowanie", showNextButton: false, textColor: .black, subTextColor: .UI.orangePrimary, lastPage: true, viewIndex: $viewIndex)
                 .offset(y: 50)
             
             Spacer()
@@ -34,7 +34,13 @@ struct SummaryView: View {
                     Text("Twoje zamówienie dotrze o:")
                         .font(.system(size: 15))
                         .foregroundColor(.UI.gray3)
-                    Text("17:03")
+                        .onReceive(timer) {_ in
+                            progress = 1 - Date().distance(to: orders[0].deliveryDate!)/60
+                            if (progress >= 1) {
+                                progress = 1
+                            }
+                        }
+                    Text(orders[0].deliveryDate!, style: .time)
                         .font(.system(size: 35))
                         .foregroundColor(.UI.orangePrimary)
                     Text("\(Int(progress*100))%")

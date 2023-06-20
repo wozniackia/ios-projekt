@@ -40,6 +40,7 @@ struct MainMenuView: View {
             .clipShape(Capsule())
             
             BottomBar(index: viewIndex)
+                .offset(y:30)
                 .padding(0)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
         }

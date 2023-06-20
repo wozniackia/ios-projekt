@@ -2,14 +2,14 @@
 //  Order+CoreDataClass.swift
 //  PizzaApp
 //
-//  Created by Antek Woźniacki on 14/06/2023.
+//  Created by student on 25/11/1444 AH.
 //
 //
 
 import Foundation
 import CoreData
 
-@objc(Order)
+
 public class Order: NSManagedObject {
 
 }

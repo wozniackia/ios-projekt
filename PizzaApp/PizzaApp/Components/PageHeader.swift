@@ -14,6 +14,7 @@ struct PageHeader: View {
     var showNextButton = true
     var textColor = Color.UI.orangePrimary
     var subTextColor = Color.black
+    var lastPage = false
     
     @Binding var viewIndex: Int
     
@@ -22,7 +23,11 @@ struct PageHeader: View {
             if showBackButton {
                 VStack {
                     Button("Powrót") {
-                        viewIndex = viewIndex-1
+                        if(lastPage) {
+                            viewIndex -= 2
+                        } else {
+                            viewIndex -= 1
+                        }
                     }
                     .font(.system(size: 16, weight: .medium))
                     .foregroundColor(subTextColor)
@@ -59,7 +64,8 @@ struct PageHeader_Previews: PreviewProvider {
     static let showNextButton = true
     static let textColor = Color.UI.orangePrimary
     static let subTextColor = Color.black
+    static let lastPage = false
     static var previews: some View {
-        PageHeader(headerText: headerText, showBackButton: showBackButton, showNextButton: showNextButton, textColor: textColor, subTextColor: subTextColor, viewIndex: .constant(0))
+        PageHeader(headerText: headerText, showBackButton: showBackButton, showNextButton: showNextButton, textColor: textColor, subTextColor: subTextColor, lastPage: lastPage, viewIndex: .constant(0))
     }
 }
